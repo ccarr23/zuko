@@ -17,7 +17,7 @@ console.log(startingNumber, endingNumber, stepValue);
 
    for (let i = startingNumber; i <= endingNumber; i += stepValue ) {
    if (i%2 == 0) {
-      document.getElementById("result").innerText = i;
+      document.getElementById("result").innerText += i + ",";
 
    console.log(i);
        // alert("Must enter a number.");
