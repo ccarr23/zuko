@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="displayEvens.js">
+    </script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1>Sample</h1>
+      <form name="displayEvens" onsubmit="return returnEvens();">
+
+        <div class="form-group">
+          <label for="startingNumber">Starting Number</label>
+          <input type="number" class="form-control" id="startingNumber">
+        </div>
+
+        <div class="form-group">
+          <label for="endingNumber">Ending Number</label>
+          <input type="number" class="form-control" id="endingNumber">
+        </div>
+
+        <div class="form-group">
+          <label for="stepValue">Step</label>
+          <input type="number" class="form-control" id="stepValue">
+        </div>
+
+        <button type="submit" id="submitButton" class="btn btn-defualt">Display Evens</button>
+
+      </form>
+
+      <table id="results" class="table table-striped" style="display">
+        <tbody>
+          <tr>
+            <td><span id="result"></span></td>
+          </tr>
+         </tbody>
+        </table>
+
+  </body>
+</html>
